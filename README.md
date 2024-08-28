@@ -16,7 +16,7 @@ pip install torch transformers numpy
 ```
 Directory Structure
 The script expects the following directory structure:
-
+```bash
 /path/to/project
 ├── README.md
 ├── bio_clinical_bert_vectorization.py
@@ -27,7 +27,7 @@ The script expects the following directory structure:
     └── folder2
         ├── file2.md
         └── file2_vector.npy
-
+```
 README.md: This README file.
 bio_clinical_bert_vectorization.py: The Python script for vectorizing .md files.
 magic-pdf/: Directory containing subfolders, each with a .md file that needs to be vectorized.
@@ -35,14 +35,14 @@ magic-pdf/: Directory containing subfolders, each with a .md file that needs to 
 Usage
 1. Setting the Base Directory
 Before running the script, make sure to set the base_dir variable in the script to the path of your main directory that contains the magic-pdf folder. For example:
-
+```
 base_dir = '.\magic-pdf\magic-pdf"
-
+```
 2. Running the Script
 Navigate to the project directory and run the script using Python:
-
+```
 python bio_clinical_bert_vectorization.py
-
+```
 This command will process all .md files in the specified directory, generate their vectorized representations using Bio-clinical BERT, and save the resulting vectors in .npy files in the same directory as their corresponding .md files.
 
 How It Works
