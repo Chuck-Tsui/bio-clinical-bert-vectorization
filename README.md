@@ -13,7 +13,7 @@ You can install these dependencies using pip:
 
 ```bash
 pip install torch transformers numpy
-
+```
 Directory Structure
 The script expects the following directory structure:
 
